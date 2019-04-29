@@ -21,27 +21,28 @@
 
 以 Windows 下為例。
 
-安裝:  
+### 安裝  
  [.NET Core SDK](https://dotnet.microsoft.com/download)
 
-確認安裝成功:  
+### 確認安裝成功  
 開啟 命令提示字元，執行 `dotnet --version`
 ```
 >dotnet --version
 2.1.505
 ```
 
-建置:  
+### 建置  
 進到方案目錄(~/haodoo-downloader)
 ```
 >dotnet build
 ```
 
-發佈:  
+### 發佈  
 ```
->dotnet publish
+>dotnet publish -c Release
 ```
-會發佈在 haodoo-downloader\HaodooDownloader\bin\Debug\netcoreapp2.1\publish\ 下。
+* 用 Release 組態。
+* 會發佈在 haodoo-downloader\HaodooDownloader\bin\Release\netcoreapp2.1\publish\ 下。
 
 ## 執行
 在發佈目錄下，執行
