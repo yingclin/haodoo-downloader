@@ -12,7 +12,7 @@ namespace HaodooDownloader.Services
         private const string DownloadBaseUrl = "http://www.haodoo.net/?M=d&P=";
         //
         private readonly string _outRootPath;
-        // 只下載 updb 及 epub
+        // TODO 下載格式: updb epub pdb
         private readonly string[] _bookExts = { "updb", "epub", "pdb" };
         //
         public BookDownloadService(string outRootPath)
@@ -38,9 +38,13 @@ namespace HaodooDownloader.Services
                     {
                         var bookBytes = await httpHelper.ReadDataOrNullAsync(url);
 
-                        if (bookBytes != null)
+                        if (bookBytes != null && bookBytes.Length > 0)
                         {
                             await fileWriter.WriteAsync(fileInfo, bookBytes);
+                        }
+                        else
+                        {
+                            Console.WriteLine($"檔案不存在: {fileInfo.Name}");
                         }
                     }
                     else

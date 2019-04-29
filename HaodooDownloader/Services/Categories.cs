@@ -22,13 +22,13 @@ namespace HaodooDownloader.Services
             _categoryBaseUrl = new Dictionary<string, string>
             {
                 ["世紀百強"] = "M=hd&P=100",
-                //["隨身智囊"] = "M=hd&P=wisdom",
-                //["歷史煙雲"] = "M=hd&P=history",
-                //["武俠小說"] = "M=hd&P=martial",
-                //["懸疑小說"] = "M=hd&P=mystery",
-                //["言情小說"] = "M=hd&P=romance",
-                //["奇幻小說"] = "M=hd&P=scifi",
-                //["小說園地"] = "M=hd&P=fiction"
+                ["隨身智囊"] = "M=hd&P=wisdom",
+                ["歷史煙雲"] = "M=hd&P=history",
+                ["武俠小說"] = "M=hd&P=martial",
+                ["懸疑小說"] = "M=hd&P=mystery",
+                ["言情小說"] = "M=hd&P=romance",
+                ["奇幻小說"] = "M=hd&P=scifi",
+                ["小說園地"] = "M=hd&P=fiction"
             };
         }
 

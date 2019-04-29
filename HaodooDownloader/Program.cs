@@ -1,9 +1,4 @@
-﻿using AngleSharp.Dom;
-using AngleSharp.Html.Parser;
-using HaodooDownloader.Models;
-using HaodooDownloader.Pages;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
 
